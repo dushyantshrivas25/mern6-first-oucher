@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    background-color: #000;
+    width: 100%;
+    min-height: 100%;
+    padding:  2vmax 3vmax;
+    font-family: sans-serif;
+}
+nav{
+    background-color: rgba(21, 19, 19, 0.075);
+    width: 100%;
+    height: 10vh;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+nav>ul{
+    display: flex;
+    list-style-type: none;
+    font-weight: 200;
+    font:200 1vmax "sans-serif" ;
+}
+nav>ul>li{
+    padding: 0vmax 1vmax;
+}
+nav>p{
+    font-weight: 200;
+}
+nav>h1{
+    font: 900 2.5vmax "serif";
+    letter-spacing: 3px;
+}
+nav > span {
+    font: 200 1vmax "Gilroy";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > span > i {
+    font-size: 2vmax;
+}
+
+.section1{margin-top: 5vmax;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+}
+.s1-left,.s1-right
+{width: 50%;
+    height: 100%;
+
+}
+.s1-left{
+    padding-right: 3vmax;
+}
+.s1-left img{
+    width: 4vmax;
+    height: 3.5vmax;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+.s1-box{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    font: 200 1vmax sans-serif;
+    margin-top: 1vmax;
+    
+}
+.s1-left>h1{color: white;
+    font: 500 6vmax sans-serif;
+    margin-bottom: 3vmax;
+
+}
+.s1-left span{
+    display: inline-block;
+    transform: translate(-7vmax);
+}
+.s1-left img:nth-child(2){
+    transform: translate(-3vmax);
+}
+.s1-left img:nth-child(3){
+    transform: translate(-6vmax);
+}
+.s1-right{
+    background-color:  #b3a0cf;
+        background-image: url(s1-right.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    clip-path: polygon(78% 0, 78% 11%, 100% 11%, 100% 100%, 0 100%, 0 0, 51% 0);
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 3vmax;
+}
+.circles span{
+    display: inline-block;
+    width: 1vmax;
+    height: 1vmax;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-right: .5vmax;
+}
+.circles{
+    position: absolute;
+    top: 25%;
+    right: 8%
+}
+.circles span:first-child{
+    background-color: white;
+}
+.s1r-title{font: 600 1vmax sans-serif;
+    margin-top: 1.5vmax;
+    width: 100%;
+
+}
+.s1r-input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    margin-bottom: 2vmax;
+    border-radius: 2vmax;
+    padding: 1vmax .5vmax 1vmax .5vmax;
+    width: 100%;
+    height: 10%;
+    
+}
+.s1r-input i{
+    font-size: 2vmax;
+}
+.s1r-input p{
+    font: 600 1vmax sans-serif;
+}
+
+.section2{
+    width: 100%;
+    height:40vh ;
+    /* background-color: pink; */
+    display: flex;
+    margin-top: 7vmax;
+}
+.s2-left {
+    width: 25%;
+    height: 100%;
+    /* background-color: yellow; */
+}
+
+.s2-right {
+    width: 75%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+}
+.s2-left{display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.playsign{
+    display: flex;
+    color: white;
+    align-items: center;
+}
+.playsign i{
+    font-size: 3vmax;
+    margin-right: 1vmax;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+}
+.buttons>button{
+margin-bottom: 1vmax;
+padding: .8vmax 3vmax;
+border: 1px solid white;
+border-radius: 2vmax;
+background: transparent;
+color: white;
+}
+.bottombox{
+    width: 33%;
+    height: 100%;
+    background-color: white;
+    clip-path: polygon(64% 5%, 75% 0%, 100% 0, 100% 100%, 0 100%, 1% 5%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3vmax 2vmax 2vmax 2vmax;
+    border-radius: 1vmax;
+}
+.box1b{
+    background-color:  #fd5e09;;
+}
+.box2b{
+    background-color: #e0e0e0;;
+}
+.box3b{
+    background-color:  #fdc959;;
+}
+.box1b >p{font: 700 1.4vmax sans-serif;
+    
+}
+.box1b >i{
+    font-size: 4vmax;
+}
+.boxwhite{
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxwhite .circles span{width: 0.5vmax;
+    height: 0.5vmax;
+    border-color: #000;
+
+}
+.boxwhite .circles{
+    position: initial;
+}
+.boxwhite .circles span:first-child{
+    background-color: black;
+    margin: 0;
+}
+.boxwhite>i{
+    font-size: 3vmax;
+}
